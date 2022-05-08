@@ -1,7 +1,12 @@
+import PaddingWrapper from "parts/PaddingWrapper"
+import PageWrapper from "parts/PageWrapper"
+
 export default function Home() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <PageWrapper>
+      <PaddingWrapper>
+        Content goes here
+      </PaddingWrapper>
+    </PageWrapper>
   )
 }

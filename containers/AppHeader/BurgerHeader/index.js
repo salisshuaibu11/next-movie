@@ -1,0 +1,31 @@
+import AppBar from "components/UI/AppBar";
+import HamburgerButton from "components/UI/HamburgerButton";
+import SearchBar from "containers/SearchBar";
+import DarkModeToggle from "containers/DarkModeToggle";
+
+const BurgerHeader = ({ openMenu }) => (
+  <>
+    <AppBar>
+      <HamburgerButton onClick={openMenu} />
+      <div className="sticky-bar-widgets-container">
+        <SearchBar id="mobile" />
+        <DarkModeToggle 
+          id="mobile"
+          className="lef-margin"
+        />
+      </div>
+      <style jsx>{`
+        .sticky-bar-widgets-container {
+          display: flex;
+          align-items: center;
+        }
+
+        .sticky-bar-widgets-container > :global(*:not(:first-child)) {
+          margin-left: 8px;
+        }  
+      `}</style>
+    </AppBar>
+  </>
+);
+
+export default BurgerHeader;

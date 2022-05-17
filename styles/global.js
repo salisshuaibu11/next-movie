@@ -1,7 +1,8 @@
-import css from "styled-jsx/css";
 
-import theme from "./theme";
-import CLASS_NAMES from "../utils/constants/class-names";
+import css from 'styled-jsx/css';
+
+import theme from './theme';
+import CLASS_NAMES from 'utils/constants/class-names';
 
 export default css.global`
   :root {
@@ -127,7 +128,6 @@ export default css.global`
     font-size: 62.5%; // 1rem = 10px
     box-sizing: border-box;
   }
-
   @media screen and (prefers-reduced-motion: reduce) {
     html {
       scroll-behavior: auto;

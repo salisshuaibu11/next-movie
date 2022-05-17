@@ -1,3 +1,4 @@
+
 const theme = {
   shadows: [
     'none',
@@ -61,14 +62,23 @@ const theme = {
     fontWeightMedium: 500,
     fontWeightBold: 700
   },
+  /**
+   * MEMO: could follow Material UI in other theming options
+   * Material UI breakpoints
+   * MUI typography
+   * MUI mobile first design principle
+   * MUI AppBar and Drawer
+   * MUI Link
+   */
+  // TODO: size and mediaQueries should go into custom section and size => sizes
   size: {
     smallest: '275px', // 25em
     smaller: '500px', // 31.25em
     small: '600px', // 37.5em
     medium: '900px', // 56.25em
     large: '1300px', // 80em
-    larger: '1462.5px', //90em
-    largest: '1500px', // 97em
+    larger: '1462.5px', // 90em
+    largest: '1500px' // 97em
   },
   mediaQueries: {
     smallest: 'only screen and (max-width: 275px)',
@@ -84,6 +94,6 @@ const theme = {
       appBarHeight: 56
     }
   }
-}
+};
 
-export default theme
+export default theme;

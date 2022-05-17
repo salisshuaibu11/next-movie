@@ -1,11 +1,13 @@
-import clsx from "clsx";
+
+import clsx from 'clsx';
 
 const MainWrapper = ({
   theme,
-  className,
+  className = '',
   children
 }) => (
   <>
+    {console.log(theme)}
     <div className={clsx('main-wrapper', className)}>
       {children}
     </div>
@@ -21,7 +23,7 @@ const MainWrapper = ({
         .main-wrapper {
           flex-direction: column;
         }
-      }  
+      }
     `}</style>
   </>
 );

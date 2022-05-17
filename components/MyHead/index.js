@@ -2,7 +2,7 @@ import Head from "next/head";
 
 import { LOGO_IMAGE_PATH, DARK_TMDB_IMAGE_PATH, LIGHT_TMDB_IMAGE_PATH } from "utils/constants/image-paths";
 
-const MyHead = ({}) => (
+const MyHead = ({children}) => (
   <Head>
     <link rel="preconnect" href="https://image.tmdb.org" />
     <link rel="preconnect" href="https://api.themoviedb.org" />
